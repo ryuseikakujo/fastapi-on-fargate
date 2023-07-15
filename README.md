@@ -56,7 +56,7 @@ Enter Cloudformation stack name for Terraform Backend: my-app-tfstate
 
 S3 bucket and DynamoDB will be created. These resource will be used for Terraform backend.
 
-## 4. Create resources with Terraform
+## 5. Create resources with Terraform
 
 Change `bucket` and `dynamodb_table` at `infrastructure/terraform/backend.tf`.
 
@@ -81,7 +81,7 @@ $ terraform apply
 
 Resources such as VPC, NAT, ECS, ELB will be created.
 
-## 5. Setup GitHub Actions secrets
+## 6. Setup GitHub Actions secrets
 
 Assign the following GitHub Actions secrets for continuous delivery of ECS at `.github/workflows/cd_ecs.yml`.
 
